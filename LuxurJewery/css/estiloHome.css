@@ -25,6 +25,7 @@ body {
   align-items: center;
   gap: 50px;
   justify-content: center;
+  flex-direction: column;
 }
 
 .categorias {
