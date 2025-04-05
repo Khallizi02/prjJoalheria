@@ -3,23 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/estiloProduto.css">
+    <link rel="stylesheet" href="./css/estiloCadastro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
 </head>
 
-<body>
+<div class="cadastro-produto">
+    <div class="container">
+        <div id="wrapper">
+            <h1>Luxur Jewery</h1>
+            <h2>Faça o cadastro do seu produto!</h2>
 
-    <div class="container"></div>
-    <div id="wrapper">
-        <h1>Luxur Jewery</h1>
-        <h2>Faça o cadastro do seu produto!</h2>
-        
-        <form class="/cadastrar_produto" method="post">
-            <div id="inputs">
-                <div>
+            <form class="/cadastrar_produto" method="post">
+                <div id="inputs">
+                    <div>
                         <label for="nome">Nome do Produto:</label>
-                        <input type="text" id="nome"    placeholder="Insira o nome do produto" autofocus>
+                        <input type="text" id="nome" placeholder="Insira o nome do produto" autofocus>
                         <br><br>
 
                         <label for="descricao">Descrição do Produto:</label>
@@ -27,7 +26,7 @@
                         <br><br>
 
                         <label for="material do produto">Material do Produto:</label>
-                        <input type="text" id="material" placeholder="Insira o Material do produto"> 
+                        <input type="text" id="material" placeholder="Insira o Material do produto">
                         <br><br>
 
                         <label for="preco">Preço:</label>
@@ -50,15 +49,15 @@
 
                         <label for="imagem">Imagem do Produto:</label>
                         <input type="file" id="imagem" name="imagem"><br><br>
-                        
+
                         <a href="/enviado.html" class="btn" id="botaoCadastrar">Cadastrar</a>
                         <br><br>
+                    </div>
                 </div>
-            </div>
+        </div>
     </div>
 
-    <script src="scriptProduto.js"></script>
-
-</body>
+    <script src="/LuxurJewery/script/scriptProduto.js"></script>
+</div>
 
 </html>

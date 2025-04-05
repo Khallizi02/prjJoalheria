@@ -1,0 +1,68 @@
+form {
+  margin: 35px 0;
+}
+
+#inputs {
+  height: 127px;
+  transition: height 0.5s ease-in-out;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#inputs div {
+  height: 41px;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top left;
+}
+
+#inputs div input {
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+}
+
+input {
+  background: #e6a8675d;
+  border: 0;
+  border-radius: 15px;
+  padding: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+input:focus {
+  background: #EAEAEA;
+}
+
+input[type=submit] {
+  background: #43434C;
+  color: #FFFEFC;
+  cursor: pointer;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input:checked[value=reset] ~ #inputs {
+  height: 84px;
+}
+
+input:checked[value=register] ~ #inputs {
+  height: 170px;
+}
+
+input:checked[value=login] ~ #labels {
+  margin-top: 10px;
+}
+
+label {
+  font-size: 14px;
+  color: #4c4743;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
